@@ -7,7 +7,7 @@ function [c,b,c1,g,sn,sp] = constrained_foopsi(y,b,c1,g,sn,options)
 %                  G*c = sp
 %                   c1 >= 0
 %           ||y-b-c - c_in|| <= sn*sqrt(T)
-
+%
 %   Variables:
 %   y:      raw fluorescence data (vector of length(T))
 %   c:      denoised calcium concentration (Tx1 vector)
@@ -16,7 +16,7 @@ function [c,b,c1,g,sn,sp] = constrained_foopsi(y,b,c1,g,sn,options)
 %   g:      discrete time constant(s) (scalar or 2x1 vector)
 %  sn:      noise standard deviation (scalar)
 %  sp:      spike vector (Tx1 vector)
-
+%
 %   USAGE:
 %   [c,b,c1,g,sn,sp] = constrained_foopsi(y,b,c1,g,sn,OPTIONS)
 %   The parameters b,cin,g,sn can be given or else are estimated from the data
@@ -35,7 +35,7 @@ function [c,b,c1,g,sn,sp] = constrained_foopsi(y,b,c1,g,sn,options)
 %   lags:         number of extra autocovariance lags to be considered when estimating the time constants
 %   resparse:     number of times that the solution is resparsened (default 0). Currently available only with methods 'cvx', 'spgl'
 %   fudge_factor: scaling constant to reduce bias in the time constant estimation (default 1 - no scaling)
-
+%
 % Written by:
 % Eftychios A. Pnevmatikakis, Simons Foundation, 2015 
 

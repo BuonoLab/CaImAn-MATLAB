@@ -14,7 +14,6 @@ function [c, s, options] = deconvolveCa(y, varargin)
 %  4) Nonnegative least square problem (NNLS)
 %       min_{s} norm(y - s*h, 2)^2 + lambda * norm(s,1)
 %       subject to s>=0
-
 %% inputs:
 %   y: T x 1 vector, fluorescence trace
 %   varargin: variable input arguments

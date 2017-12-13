@@ -1,4 +1,4 @@
-function sn = GetSn(Y, range_ff, method)
+function [sn, psdx, ff, indf] = GetSn(Y, range_ff, method)
 %% Estimate noise standard deviation
 
 %% inputs:
